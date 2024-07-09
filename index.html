@@ -179,7 +179,7 @@
 					tree.snapshot("p2", 500, 0, 610, 680);
 					canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
 					canvas.css("background", "#ffe");
-					$await(Jscex.Async.sleep(150));
+					$await(Jscex.Async.sleep(50));
 					canvas.css("background", "none");
 				}));
 				var jumpAnimate = eval(Jscex.compile("async", function() {
@@ -202,7 +202,7 @@
 					$("#clock-box").fadeIn(500);
 					while (true) {
 						timeElapse(together);
-						$await(Jscex.Async.sleep(500));
+						$await(Jscex.Async.sleep(200));
 					}
 				}));
 				var runAsync = eval(Jscex.compile("async", function() {
